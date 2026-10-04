@@ -94,6 +94,11 @@ configuration:
     description: >-
       Directory to store custom wake word models downloaded from Home
       Assistant.
+  custom_wakewords_dir:
+    name: Custom wakewords directory
+    description: >-
+      Directory to manually add custom wakeword models. These will be appended
+      to the default models.
   peripheral_host:
     name: Peripheral API host
     description: >-

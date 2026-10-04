@@ -76,6 +76,14 @@ if bashio::config.true 'disable_peripheral_api'; then
     extra_args+=('--disable-peripheral-api')
 fi
 
+## Add custom wakeword dir
+declare custom_wakewords_dir
+custom_wakewords_dir="$(bashio::config 'custom_wakewords_dir')"
+if bashio::config.true 'custom_wakewords_dir'; then
+    extra_args+=('--wake-word-dir "${custom_wakewords_dir}"')
+fi
+
+
 exec python3 -m linux_voice_assistant \
     --port "$(bashio::config 'port')" \
     --wake-model "$(bashio::config 'wake_word')" \

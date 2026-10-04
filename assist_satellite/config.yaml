@@ -39,6 +39,7 @@ options:
   unmute_sound: "/usr/src/sounds/mute_switch_off.flac"
   preferences_file: "/share/assist_satellite/preferences.json"
   download_dir: "/share/assist_satellite/local"
+  custom_wakewords_dir: "/share/assist_satellite/wakewords"
 schema:
   name: str?
   port: int
@@ -65,6 +66,7 @@ schema:
   unmute_sound: str
   preferences_file: str
   download_dir: str
+  custom_wakewords_dir: str
 audio: true
 host_network: true
 homeassistant: 2026.3.0
