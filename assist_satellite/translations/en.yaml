@@ -97,7 +97,7 @@ configuration:
   custom_wakewords_dir:
     name: Custom wakewords directory
     description: >-
-      Directory to manually add custom wakeword models. These will be appended
+      Directory to add custom wakeword models. These will be appended
       to the default models.
   peripheral_host:
     name: Peripheral API host
