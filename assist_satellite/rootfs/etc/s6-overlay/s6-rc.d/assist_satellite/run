@@ -80,7 +80,7 @@ fi
 declare custom_wakewords_dir
 custom_wakewords_dir="$(bashio::config 'custom_wakewords_dir')"
 if [[ -d "${custom_wakewords_dir}" ]]; then
-    extra_args+=('--wake-word-dir "${custom_wakewords_dir}"')
+    extra_args+=('--wake-word-dir' "${custom_wakewords_dir}")
 fi
 
 
